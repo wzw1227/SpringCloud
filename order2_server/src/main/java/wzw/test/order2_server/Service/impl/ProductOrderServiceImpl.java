@@ -25,8 +25,6 @@ public class ProductOrderServiceImpl implements ProductOrderServerI {
         JsonNode jsonNode =JsonUtils.str2JsonNode(response);//将字符串转换成json格式数据
 
         //调用用户服务，获取用户信息
-
-
         ProductOrderEntity entity = new ProductOrderEntity();
         entity.setCreateTime(new Date());
         entity.setUserId(userId);
